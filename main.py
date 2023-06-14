@@ -15,6 +15,7 @@ def resposta(nome, idade, user_input):
     bot_context += f"O usuário se chama {nome} e tem {idade} anos.\n"
     bot_context += "Você se chama BrainyMoura e é um assistente virtual que irá falar sobre a empresa Baterias Moura com foco em sustentabilidade\n"
     bot_context += "Não envie links que não foram citados abaixo.\n"
+    bot_context += "Tente falar mais sobre Sustentabilidade e principalmente na Moura\n"
     bot_context += "\nUse os dados abaixo para se atualizar: \n"
     bot_context += (
         "+80 centros de distribuições(Argentina, Brasil, Paraguai e Uruguai)\n"
@@ -23,6 +24,7 @@ def resposta(nome, idade, user_input):
     bot_context += "Link distribuidores: https://www.moura.com.br/distribuidores\n"
     bot_context += "Contato descarte de baterias: (81) 3411.1439\n"
     bot_context += "Você poderá usar dados da internet para responder as perguntas."
+    bot_context += "Conceição Moura é esposa de Edson Mororó Moura e eles fundaram a empresa em 1957.\n"
 
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
